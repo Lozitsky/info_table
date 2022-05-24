@@ -11,9 +11,10 @@ class SidenavList extends HTMLElement {
   }
 
   getTemplate(_class) {
-    const template = document.createElement('template');
-    template.innerHTML = `
-       <style>
+    if (![...document.head.children]
+      .some(el => el.tagName === 'STYLE' && el.innerText.includes(`.${_class}__list`))) {
+      let style = document.createElement('style');
+      style.innerHTML = `
           .${_class}__list {
             display: grid;
             grid-template-columns: minmax(150px, 1fr);
@@ -38,7 +39,12 @@ class SidenavList extends HTMLElement {
             right: 0;
           /*display: none;*/
           }
-       </style>
+      `;
+      document.head.appendChild(style);
+    }
+
+    const template = document.createElement('template');
+    template.innerHTML = `
        <ul class="${_class}__list">  
        </ul>
     `;

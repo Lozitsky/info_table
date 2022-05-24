@@ -38,7 +38,9 @@ class TableItem extends HTMLElement {
   getBodyTemplate(_class, suffix) {
     const template = document.createElement('template');
     template.innerHTML = `
-            <td class="${_class}__data ${_class}__data-${suffix}">${this.textContent}</td>
+            <td class="${_class}__data ${_class}__data-${suffix}">
+                <span class="${_class}__span">${this.textContent}</span>
+            </td>
     `;
     return template;
   }

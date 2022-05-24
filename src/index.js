@@ -15,8 +15,8 @@ customElements.define('table-item', TableItem);
 customElements.define('table-data', TableData);
 
 
-if (process.env.NODE_ENV !== 'production') {
-  // alert(`Looks like we are in ${process.env.NODE_ENV} mode!`);
-  // console.log(`Looks like we are in ${process.env.NODE_ENV} mode!`);
+// if (process.env.NODE_ENV !== 'production') {
+// alert(`Looks like we are in ${process.env.NODE_ENV} mode!`);
+// console.log(`Looks like we are in ${process.env.NODE_ENV} mode!`);
 
-}
+// }

@@ -4,7 +4,7 @@
     "path": false,
     "os": false
   },
-  "name": "info-table",
+  "name": "sidenav_info-table",
   "version": "1.0.0",
   "description": "Display data in the table",
   "main": "src/index.js",
