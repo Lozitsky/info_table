@@ -4,7 +4,7 @@
     "path": false,
     "os": false
   },
-  "name": "sidenav_info-table",
+  "name": "sidenav-tables",
   "version": "1.0.0",
   "description": "Display data in the table",
   "main": "src/index.js",
@@ -41,13 +41,14 @@
     "webpack-dev-server": "^4.9.0",
     "webpack-merge": "^5.8.0"
   },
-  "unpkg": "dist/info-table.min.js",
+  "unpkg": "dist/sidenav-tables.min.js",
   "files": [
     "dist"
   ],
   "dependencies": {
   },
   "keywords": [
-    "info-table"
+    "info-table",
+    "sidenav-list"
   ]
 }

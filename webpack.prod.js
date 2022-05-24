@@ -1,7 +1,7 @@
 const {merge} = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require("path");
-const libraryName = 'info-table';
+const libraryName = 'sidenav-tables';
 const outputFile = `${libraryName}.min.js`;
 const webpack = require('webpack');
 
